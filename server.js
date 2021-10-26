@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json())
 
-app.listen(3000,function(){
+app.listen(8000,function(){
 console.log("server is running")
 })
 app.get('/users/:id',function(req,res){
