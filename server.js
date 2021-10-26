@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json())
 
-app.listen(8000,function(){
+app.listen(3000,function(){
 console.log("server is running")
 })
 app.get('/users/:id',function(req,res){
@@ -49,6 +49,6 @@ app.post('/login', function(req,res){
         }
 })
 
-app.listen(8000,function(){console.log('server is listening')})
+app.listen(3000,function(){console.log('server is listening')})
 
 
