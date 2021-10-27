@@ -49,5 +49,20 @@ app.post('/login', function(req,res){
         }
 })
 
+app.post('/hello',function(req,res){
+	const username=req.body.username;
 
+ 	if (username===mockUsername){
+		res.json({
+			success: true,
+			message: 'Hello ' + username
+		})
+	} else {
+		res.json({
+			success: false,
+			message: 'something went wrong'
+		})
+	}
+
+})
 
